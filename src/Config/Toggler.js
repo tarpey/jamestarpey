@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 const Toggle = ({ theme, toggleTheme }) => {
   return (
     <div className={`toggle ${theme}`} onClick={toggleTheme}>

@@ -1,24 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700");
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
 
+$brand: #850f0f;
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  border-top: 40px solid #e67e22;
+  border-top: 40px solid $brand;
   font-size: 20px;
-  font-family: Lato, sans-serif;
-  line-height: 30px;
-  padding: 80px 0 20px;
+  font-family: "Lato", sans-serif;
+  line-height: 1.5;
+}
+
+#skip-to-content-link {
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  opacity: 0;
+  &:focus {
+    opacity: 1;
+  }
+}
+
+#root {
+  padding: 80px 40px 20px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 header,
 section,
 footer {
-  max-width: 768px;
-  margin: 0 auto;
   padding: 40px 0;
 }
 
@@ -55,19 +75,12 @@ h2,
 h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  line-height: 1;
 }
 
 h1 {
   font-size: 40px;
-  line-height: 40px;
-  a {
-    color: #2a2d31;
-    text-decoration: none;
-    transition: all 0.2s;
-    &:active {
-      color: #fff;
-    }
-  }
+  line-height: 1;
 }
 
 h2 {
@@ -79,17 +92,21 @@ h2 {
     margin: 20px 0;
     height: 2px;
     width: 20px;
-    background-color: #e67e22;
   }
 }
 
 a {
-  color: #e67e22;
+  font-weight: 600;
   &:hover {
     filter: brightness(1.2);
   }
   &:focus {
-    background-color: #e67e22;
+    color: #fff;
+    outline: 3px solid transparent;
+    background-color: $brand;
+    text-decoration: none;
+  }
+  &:active {
     color: #fff;
   }
 }
@@ -113,9 +130,6 @@ a {
   .grid-item {
     padding: 20px;
     transition: all 0.2s;
-    &:hover {
-      //transform: translateY(-5px);
-    }
     h3 {
       margin-top: 0;
     }
@@ -133,77 +147,13 @@ a {
   }
 }
 
-label {
-  display: block;
-}
-
-input[type="email"],
-input[type="password"] {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 20px;
-  border: 1px solid #dddddd;
-  transition: all 0.2s;
-  margin-bottom: 20px;
-  color: #2a2d31;
-  &:focus {
-    border: 1px solid #aaaaaa;
-  }
-}
-
-button {
-  display: block;
-  margin-bottom: 20px;
-  background-color: #e67e22;
-  border: none;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: #ffffff;
-  transition: all 0.2s;
-  &:hover {
-    cursor: pointer;
-    background: darken(#e67e22, 10%);
-  }
-}
-
-p.error {
-  display: block;
-  width: 100%;
-  background: #e65122;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-p.warning {
-  display: block;
-  width: 100%;
-  background: #e6af22;
-  color: #fff;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  li {
-    list-style: none;
-  }
-}
-
 .toggle {
   height: 32px;
-  border: 3px solid #e67e22;
   padding: 10px;
   border-radius: 50%;
-  fill: #e67e22;
   transition: all 0.25s;
   &:hover {
     cursor: pointer;
-    fill: lighten($color: #e67e22, $amount: 10);
-    border-color: darken($color: #e67e22, $amount: 10);
   }
   &:active {
     transform: translateY(3px);
@@ -213,29 +163,32 @@ ul {
 @media (max-width: 768px) {
   body {
     font-size: 1rem;
-    border-top: 20px solid #e67e22;
+    border-top: 20px solid $brand;
     padding: 20px 0;
   }
   h1 {
     font-size: 30px;
     a {
-      color: #2a2d31;
       text-decoration: none;
       transition: all 0.2s;
-      &:active {
-        color: #fff;
-      }
     }
+  }
+  #root {
+    padding: 0;
+    max-width: 100%;
   }
   header,
   section,
   footer {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px 40px;
+    padding: 20px 20px 0 20px;
   }
   header {
     grid-gap: 10px;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+  }
+  section h2 {
+    margin-top: 0;
   }
   .grid {
     display: grid;
@@ -244,24 +197,5 @@ ul {
   }
   .toggle {
     display: none;
-  }
-}
-
-@media (max-width: 374px) {
-  body {
-    border-top: 10px solid #e67e22;
-    padding: 10px 0;
-  }
-  header,
-  section,
-  footer {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 10px 20px;
-  }
-  h1,
-  h2,
-  h3 {
-    font-size: 1.5rem;
   }
 }

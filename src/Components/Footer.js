@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-export default ({ history }) => {
+export default () => {
   return (
     <footer>
       <ul>
