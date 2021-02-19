@@ -7,8 +7,7 @@ export default () => {
       <section>
         <h2>Hello</h2>
         <p>
-          I'm a UX Designer with over 10 years experience in the public sector.
-          I’m currently a Senior Content and UX Designer at{" "}
+          I’m a Software Engineer at{" "}
           <a href="https://bristol.gov.uk">Bristol City Council</a>.
         </p>
         <p>
