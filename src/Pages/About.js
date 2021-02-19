@@ -49,10 +49,17 @@ export default () => {
         <div className="grid full">
           <div className="grid-item">
             <h3>
+              Software Engineer{" "}
+              <span>at Bristol City Council</span>
+            </h3>
+            <p>February 2021 &mdash; Present</p>
+          </div>
+          <div className="grid-item">
+            <h3>
               Senior Content and UX Designer{" "}
               <span>at Bristol City Council</span>
             </h3>
-            <p>January 2020 &mdash; Present</p>
+            <p>January 2020 &mdash; January 2021</p>
             <ul>
               <li>Promoting accessibility guidelines and compliance</li>
               <li>Building and maintaining a Design System</li>

@@ -13,7 +13,7 @@ const Header = ({ theme, toggleTheme, history }) => {
         <h1>
           <Link to="/">James Tarpey </Link>
         </h1>
-        <p>UX Designer</p>
+        <p>Software Engineer</p>
       </div>
       <div>
         <Toggle theme={theme} toggleTheme={toggleTheme} />
