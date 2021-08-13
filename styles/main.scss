@@ -57,6 +57,9 @@ header {
   a {
     text-decoration: none;
   }
+  & + .btn {
+    margin-top: 40px;
+  }
 }
 
 .card {
