@@ -1,0 +1,23 @@
+a {
+  color: #48bb78;
+  text-decoration: underline;
+  transition: color 0.1s ease;
+  &:focus {
+    color: #000;
+    background-color: $accent;
+    outline: 2px solid $accent;
+  }
+  &:hover {
+    color: #9ae6b4;
+  }
+}
+
+h1 {
+  font-size: 85px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 100px 0 25px 0;
+}

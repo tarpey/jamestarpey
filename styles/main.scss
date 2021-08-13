@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+$accent: #48bb78;
+$focus: #48bb78;
+$borders: rgba(255, 255, 255, 0.1);
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  border-top: 10px solid #48bb78;
+  background: #1a202c;
+  color: #ffffff;
+  padding: 200px 0;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@import "typography";
+@import "footer";
+
+header {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-gap: 20px;
+  h1 {
+    line-height: 80px;
+  }
+}
+
+.btn + header {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.card {
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  color: #fff;
+  border: 1px solid $borders;
+  transition: border-color 0.1s ease;
+  border-radius: 5px;
+  &:focus {
+    color: #fff;
+    background: none;
+    border-color: $focus;
+  }
+  &:hover,
+  &:active {
+    color: #ffffff;
+    border-color: #3ccf91;
+  }
+  h3 {
+    margin: 0 0 10px 0;
+    font-size: 25px;
+  }
+  p {
+    margin: 0;
+    font-size: 22px;
+    line-height: 1.5;
+    & + .tag {
+      margin-top: 20px;
+    }
+  }
+}
+
+.tag {
+  display: inline-flex;
+  padding: 4px 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  border-radius: 4px;
+  &.typescript {
+    background: #44337a;
+    color: #e9d8fd;
+  }
+  &.react,
+  &.react-native {
+    background: #086f83;
+    color: #e6fffa;
+  }
+  &.php {
+    background: #44337a;
+    color: #faf5ff;
+  }
+  &.grid {
+    display: inline-flex;
+    grid-gap: 0;
+    background: #702459;
+  }
+  &.wordpress {
+    background: #2a4365;
+  }
+  &.firebase {
+    background: #7b341e;
+    color: #feebc8;
+  }
+  &.next-js {
+    background: #744210;
+    color: #fffff0;
+  }
+  svg {
+    margin-inline-end: 5px;
+  }
+  & + .tag {
+    margin-left: 10px;
+  }
+}
+
+ul.ctas li {
+  display: inline-block;
+}
+
+ul.ctas li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn {
+  font-weight: 500;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.05s ease;
+  & + .btn {
+    margin-left: 20px;
+  }
+  a {
+    outline: none;
+    border: 2px solid transparent;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    &:focus {
+      border-color: $focus;
+    }
+    &:hover {
+      cursor: pointer;
+      background: rgba(0, 0, 0, 0.5);
+      color: #fff;
+    }
+    svg {
+      color: #48bb78;
+      margin-right: 5px;
+      margin-left: -4px;
+    }
+  }
+}
+
+p.description {
+  margin-bottom: 50px;
+}
+
+.skills .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 25px;
+  .card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    font-weight: 500;
+    &:hover {
+      svg {
+        color: $accent;
+      }
+    }
+  }
+}
+
+.employer {
+  .employer-details {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $borders;
+    img {
+      width: 80px;
+    }
+    .muted {
+      margin: 0;
+    }
+  }
+  h3,
+  h4,
+  p {
+    margin: 0;
+    &.muted + ul {
+      margin-top: 20px;
+    }
+  }
+  .role {
+    border-left: 5px solid $borders;
+    position: relative;
+    margin-left: 10px;
+    padding: 10px 0 25px 25px;
+    &:last-child {
+      padding-bottom: 10px;
+    }
+    &:before {
+      position: absolute;
+      top: 17px;
+      left: -12px;
+      height: 20px;
+      width: 20px;
+      background-color: $accent;
+      content: "";
+    }
+    ul {
+      margin: 0;
+      padding: 0 0 0 1em;
+      list-style: square;
+    }
+  }
+  & + .employer {
+    margin-top: 50px;
+  }
+}
+
+.muted {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.screenshot {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid $borders;
+  border-radius: 5px;
+
+  > div {
+    position: unset !important;
+  }
+  img {
+    object-fit: contain;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+  }
+}
+
+@import "mobile";
