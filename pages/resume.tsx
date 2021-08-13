@@ -18,23 +18,10 @@ export default function Home() {
       </p>
       <div className="buttons">
         <Button
-          target="_blank"
-          icon="mdiGithub"
-          text="Github"
-          url="https://github.com/tarpey"
+          icon="mdiFileDownload"
+          text="Download Resume"
+          url="resume.pdf"
         />
-        <Button
-          target="_blank"
-          icon="mdiLinkedin"
-          text="LinkedIn"
-          url="https://linkedin.com/in/jamestarpey"
-        />
-        <Button
-          icon="mdiEmail"
-          text="Email"
-          url="mailto:hello@jamestarpey.com"
-        />
-        <Button icon="mdiFilePdf" text="Resume" url="resume.pdf" />
       </div>
       <div className="skills">
         <h2>Skills</h2>
@@ -51,6 +38,10 @@ export default function Home() {
           <Skill text="Firebase" icon="mdiFirebase" />
           <Skill text="Azure" icon="mdiMicrosoftAzure" />
           <Skill text="WordPress" icon="mdiWordpress" />
+          <Skill text="Figma" icon="mdiPalette" />
+          <Skill text="Wireframing" icon="mdiDrawing" />
+          <Skill text="Accessibility" icon="mdiCodeTagsCheck" />
+          <Skill text="Agile" icon="mdiSync" />
         </div>
       </div>
       <div className="projects">
