@@ -28,7 +28,7 @@ export default function Project(props) {
           <Button
             target="_blank"
             icon="mdiGithub"
-            text="Github"
+            text="GitHub"
             url={project.github}
           />
         )}

@@ -19,7 +19,7 @@ export default function Home() {
         <Button
           target="_blank"
           icon="mdiGithub"
-          text="Github"
+          text="GitHub"
           url="https://github.com/tarpey"
         />
         <Button
@@ -37,7 +37,7 @@ export default function Home() {
       </div>
       <h2>Projects</h2>
       <div className="grid">
-        {projects.map((project, index) => {
+        {projects.slice(0, 4).map((project, index) => {
           return (
             <Project
               key={index}
@@ -48,6 +48,7 @@ export default function Home() {
           );
         })}
       </div>
+      <Button text="More Projects" url="/resume" />
       <h2>Contact</h2>
       <p>Looking to build something? Let’s talk.</p>
       <div className="buttons">
