@@ -16,7 +16,7 @@ export default function Home() {
         beautifully simple things. I’m currently a Software Engineer at{" "}
         <a href="https://bristol.gov.uk">Bristol City Council</a>.
       </p>
-      <Button icon="mdiFileDownload" text="Download Resume" url="resume.pdf" />
+      <Button icon="mdiFileDownload" text="Download Resume" url="/resume.pdf" />
       <div className="skills">
         <h2>Skills</h2>
         <div className="grid">
