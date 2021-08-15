@@ -48,9 +48,9 @@ export default function Home() {
           );
         })}
       </div>
-      <Button text="More Projects" url="/resume" />
+      <Button icon="mdiPlus" text="More Projects" url="/resume" />
       <h2>Contact</h2>
-      <p>Looking to build something? Let’s talk.</p>
+      <p>Looking to build something?</p>
       <div className="buttons">
         <Button
           target="_blank"
