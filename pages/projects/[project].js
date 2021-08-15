@@ -15,7 +15,7 @@ export default function Project(props) {
       {project.description.map((paragraph, i) => {
         return <p key={i}>{paragraph}</p>;
       })}
-      <div className="buttons">
+      <div className={project.url && project.github ? "buttons" : ""}>
         {project.url && (
           <Button
             target="_blank"
