@@ -32,7 +32,7 @@ export const Project: React.FunctionComponent<Props> = ({
   description,
   tags,
 }) => {
-  const url = title.replaceAll(" ", "-").toLowerCase();
+  const url = title.replace(/\s/g, "-").toLowerCase();
   return (
     <Link href={`/projects/${url}`}>
       <a className="card">
