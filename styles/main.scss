@@ -95,27 +95,26 @@ header {
 }
 
 .tag {
+  position: relative;
   display: inline-flex;
-  padding: 4px 8px;
+  padding: 8px 8px;
   font-size: 16px;
   font-weight: 500;
   background: rgba(0, 0, 0, 0.2);
   align-items: center;
-  border-radius: 4px;
+  border-radius: 50px;
+  color: #fff;
   &.typescript {
     background: #44337a;
-    color: #e9d8fd;
   }
   &.react,
   &.react-native {
     background: #086f83;
-    color: #e6fffa;
   }
   &.php {
     background: #44337a;
-    color: #faf5ff;
   }
-  &.grid {
+  &.css-grid {
     display: inline-flex;
     grid-gap: 0;
     background: #702459;
@@ -125,14 +124,15 @@ header {
   }
   &.firebase {
     background: #7b341e;
-    color: #feebc8;
   }
   &.next-js {
     background: #744210;
-    color: #fffff0;
   }
-  svg {
-    margin-inline-end: 5px;
+  &.bootstrap {
+    background: #822727;
+  }
+  span {
+    margin-left: 5px;
   }
   & + .tag {
     margin-left: 10px;
@@ -280,4 +280,5 @@ p.description {
   }
 }
 
+@import "balloon";
 @import "mobile";
