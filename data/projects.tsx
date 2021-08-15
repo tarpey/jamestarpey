@@ -10,7 +10,7 @@ const projects = [
     url: "https://avontennis.org.uk",
     figma:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FY7979L9P92OPodIjtExVDTIV%2FWireframes-v2%3Fnode-id%3D1%253A2",
-    tags: ["PHP", "WordPress", "Grid"],
+    tags: ["PHP", "WordPress", "CSS Grid"],
   },
   {
     id: "teamsheet",
@@ -39,7 +39,7 @@ const projects = [
     ],
     url: "https://10x10-grid.vercel.app/",
     github: "https://github.com/tarpey/10x10",
-    tags: ["React", "Grid"],
+    tags: ["React", "CSS Grid"],
   },
   {
     id: "cards",
@@ -55,16 +55,7 @@ const projects = [
     github: "https://github.com/tarpey/cards",
     tags: ["React", "Firebase"],
   },
-  {
-    id: "thornbury-ndp",
-    name: "Thornbury NDP",
-    description: [
-      "Website for public consultation on the future of Thornbury.",
-      "The draft Neighbourhood Plan was completed and signed off by Thornbury Town Council during October 2020.",
-    ],
-    url: "https://thornburyplan.co.uk",
-    tags: ["PHP", "WordPress"],
-  },
+
   {
     id: "wedding",
     name: "Wedding",
@@ -77,6 +68,17 @@ const projects = [
       "This meant we could just glance at a spreadsheet for numbers and filter the data for specific information, like the total number of adults or the number of guests with dietary requirements.",
     ],
     tags: ["React", "Firebase"],
+  },
+  {
+    id: "personal-site",
+    name: "Personal Site",
+    description: [
+      "This website - a place to share my projects and resume.",
+      "My personal website has nearly always been static HTML and CSS.",
+      "For this iteration I wanted to use Next.js with Typescript.",
+    ],
+    url: "https://jamestarpey.com",
+    tags: ["Next.js", "Typescript", "CSS Grid"],
   },
   {
     id: "rocket-racer",
@@ -92,15 +94,61 @@ const projects = [
     tags: ["React", "Firebase"],
   },
   {
-    id: "personal-site",
-    name: "Personal Site",
+    id: "thornbury-ndp",
+    name: "Thornbury NDP",
     description: [
-      "This website - a place to share my projects and resume.",
-      "My personal website has nearly always been static HTML and CSS.",
-      "For this iteration I wanted to use Next.js with Typescript.",
+      "Public consultation on the future of Thornbury.",
+      "The draft Neighbourhood Plan was completed and signed off by Thornbury Town Council during October 2020.",
     ],
-    url: "https://jamestarpey.com",
-    tags: ["Next.js", "Typescript"],
+    url: "https://thornburyplan.co.uk",
+    tags: ["PHP", "WordPress", "Bootstrap"],
+  },
+  {
+    id: "south-glos-council",
+    name: "South Glos Council",
+    description: ["Website for South Gloucestershire Council."],
+    url: "https://www.southglos.gov.uk",
+    tags: ["PHP", "WordPress", "Bootstrap"],
+  },
+  {
+    id: "edocs",
+    name: "eDocs",
+    description: [
+      "Publish accessible and mobile optimised documents.",
+      "The website covers safeguarding for both adults and children.",
+    ],
+    url: "https://edocs.southglos.gov.uk",
+    tags: ["PHP", "WordPress", "Bootstrap"],
+  },
+  {
+    id: "safeguarding",
+    name: "Safeguarding",
+    description: [
+      "Website for South Gloucestershire Safeguarding.",
+      "The website covers safeguarding for both adults and children.",
+    ],
+    url: "https://sites.southglos.gov.uk/safeguarding",
+    tags: ["PHP", "WordPress", "Bootstrap"],
+  },
+  {
+    id: "war-memorials",
+    name: "War Memorials",
+    description: [
+      "War memorials across South Gloucestershire.",
+      "The website has over 1500 names of the local people who lost their lives in both World Wars. Their details are recorded on more than 62 war memorials across South Gloucestershire.",
+    ],
+    url: "https://sites.southglos.gov.uk/war-memorials",
+    tags: ["PHP", "WordPress", "Bootstrap"],
+  },
+  {
+    id: "our-area-our-future",
+    name: "Our Area Our Future",
+    description: [
+      "South Gloucestershire Partnership website.",
+      "The Partnership is a non-statutory body made up of public, private, community and voluntary organisations which aims to work together to promote the economic, social and environmental well-being of the people in South Gloucestershire.",
+    ],
+    url: "https://sites.southglos.gov.uk/oaof",
+    tags: ["PHP", "WordPress", "Bootstrap"],
   },
 ];
 

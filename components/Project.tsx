@@ -20,7 +20,7 @@ export const getIcon = (tag: string) => {
       return "mdiWordpress";
     case "PHP":
       return "mdiLanguagePhp";
-    case "Grid":
+    case "CSS Grid":
       return "mdiLanguageCss3";
     default:
       return `mdi${tag}`;
@@ -32,7 +32,7 @@ export const Project: React.FunctionComponent<Props> = ({
   description,
   tags,
 }) => {
-  const url = title.replace(" ", "-").toLowerCase();
+  const url = title.replaceAll(" ", "-").toLowerCase();
   return (
     <Link href={`/projects/${url}`}>
       <a className="card">
@@ -40,7 +40,7 @@ export const Project: React.FunctionComponent<Props> = ({
         <p>{description[0]}</p>
         {tags.map((tag, i) => {
           const icon = getIcon(tag);
-          return <Tag key={i} text={tag} icon={icon} />;
+          return <Tag key={i} text={tag} icon={icon} hideText={true} />;
         })}
       </a>
     </Link>
