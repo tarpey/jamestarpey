@@ -42,6 +42,14 @@ const projects = [
     tags: ["React", "CSS Grid"],
   },
   {
+    id: "bcc-gatsby",
+    name: "BCC Gatsby",
+    description: ["Bristol City Council website built using Gatsby."],
+    url: "https://bcc.jamestarpey.com",
+    github: "https://github.com/tarpey/bcc-gatsby",
+    tags: ["React", "Gatsby"],
+  },
+  {
     id: "cards",
     name: "Cards",
     description: [
