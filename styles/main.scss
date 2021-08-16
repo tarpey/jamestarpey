@@ -125,13 +125,17 @@ header {
   &.firebase {
     background: #7b341e;
   }
-  &.next-js {
+  &.next-js,
+  &.alpine-js {
     background: #744210;
   }
   &.bootstrap {
     background: #234e52;
   }
   &.gatsby {
+    background: #234e52;
+  }
+  &.tailwind {
     background: #234e52;
   }
   span {

@@ -42,6 +42,14 @@ const projects = [
     tags: ["React", "CSS Grid"],
   },
   {
+    id: "premier-league-table",
+    name: "Premier League Table",
+    description: ["League table using Express, Alpine.js and Tailwind."],
+    url: "https://epl-table.vercel.app/",
+    github: "https://github.com/tarpey/epl-table",
+    tags: ["Alpine.js", "Tailwind"],
+  },
+  {
     id: "bcc-gatsby",
     name: "BCC Gatsby",
     description: ["Bristol City Council website built using Gatsby."],

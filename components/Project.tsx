@@ -16,6 +16,8 @@ export const getIcon = (tag: string) => {
       return "mdiReact";
     case "Next.js":
       return "mdiLanguageJavascript";
+    case "Alpine.js":
+      return "mdiLanguageJavascript";
     case "WordPress":
       return "mdiWordpress";
     case "PHP":
