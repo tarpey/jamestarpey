@@ -50,6 +50,8 @@ const projects = [
       "Completed items are automatically pushed down the list.",
     ],
     url: "https://todo-vue-ten.vercel.app/",
+    figma:
+      "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMGb3dEs0MFsHwV6bkvU0f9%2FTo-do-list%3Fnode-id%3D0%253A1",
     github: "https://github.com/tarpey/todo-vue",
     tags: ["Vue.js", "Graphql", "Tailwind"],
   },
