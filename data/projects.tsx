@@ -42,6 +42,18 @@ const projects = [
     tags: ["React", "CSS Grid"],
   },
   {
+    id: "to-do-list",
+    name: "To do list",
+    description: [
+      "To do list app built with Vue.js, Apollo, Hasura and Tailwind.",
+      "Users can add and remove items, as well as marking them as complete.",
+      "Completed items are automatically pushed down the list.",
+    ],
+    url: "https://todo-vue-ten.vercel.app/",
+    github: "https://github.com/tarpey/todo-vue",
+    tags: ["Vue.js", "Graphql", "Tailwind"],
+  },
+  {
     id: "bcc-gatsby",
     name: "BCC Gatsby",
     description: ["Bristol City Council website built using Gatsby."],
