@@ -14,7 +14,7 @@ export default function Home() {
       <p className="description">
         I’m a full stack developer in Bristol, England. I design and code
         beautifully simple things. I’m currently a Frontend Developer at{" "}
-        <a href="https://https://mydata3.com.gov.uk">Data Cubed</a>.
+        <a href="https://mydata3.com.gov.uk">Data Cubed</a>.
       </p>
       <Button icon="mdiFileDownload" text="Download Resume" url="/resume.pdf" />
       <div className="skills">
