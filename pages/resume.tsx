@@ -13,8 +13,8 @@ export default function Home() {
       </header>
       <p className="description">
         I’m a full stack developer in Bristol, England. I design and code
-        beautifully simple things. I’m currently a Software Engineer at{" "}
-        <a href="https://bristol.gov.uk">Bristol City Council</a>.
+        beautifully simple things. I’m currently a Frontend Developer at{" "}
+        <a href="https://https://mydata3.com.gov.uk">Data Cubed</a>.
       </p>
       <Button icon="mdiFileDownload" text="Download Resume" url="/resume.pdf" />
       <div className="skills">
@@ -56,10 +56,27 @@ export default function Home() {
       <div className="employment">
         <h2>Employment</h2>
         <Employer
+          name="Data Cubed"
+          logo="dc.png"
+          start="November 2021"
+          end="Present"
+          roles={[
+            {
+              title: "Frontend Developer",
+              start: "November 2021",
+              duties: [
+                "Design, build and support myDATA³",
+                "Integrate third party platforms APIs",
+                "Collaborate with developers and commercial team",
+              ],
+            },
+          ]}
+        />
+        <Employer
           name="Bristol City Council"
           logo="bcc.png"
           start="July 2017"
-          end="Present"
+          end="November 2021"
           roles={[
             {
               title: "Software Engineer",

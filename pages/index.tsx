@@ -12,8 +12,8 @@ export default function Home() {
       </header>
       <p className="description">
         I’m a full stack developer in Bristol, England. I design and code
-        beautifully simple things. I’m currently a Software Engineer at{" "}
-        <a href="https://bristol.gov.uk">Bristol City Council</a>.
+        beautifully simple things. I’m currently a Frontend Developer at{" "}
+        <a href="https://https://mydata3.com.gov.uk">Data Cubed</a>.
       </p>
       <div className="buttons">
         <Button
