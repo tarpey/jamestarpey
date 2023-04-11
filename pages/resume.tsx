@@ -56,10 +56,27 @@ export default function Home() {
       <div className="employment">
         <h2>Employment</h2>
         <Employer
+          name="BoomBoard"
+          logo="boomboard.png"
+          start="January 2023"
+          end="Present"
+          roles={[
+            {
+              title: "Frontend Developer",
+              start: "November 2021",
+              duties: [
+                "Design, build and support BoomBoard",
+                // "Integrate third party platforms APIs",
+                // "Collaborate with developers and commercial team",
+              ],
+            },
+          ]}
+        />
+        <Employer
           name="Data Cubed"
           logo="dc.png"
           start="November 2021"
-          end="Present"
+          end="January 2023"
           roles={[
             {
               title: "Frontend Developer",

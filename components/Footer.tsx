@@ -11,7 +11,7 @@ export const Footer: React.FunctionComponent<Props> = (props) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          &copy; 2021 James Tarpey
+          &copy; 2023 James Tarpey
         </a>
       </footer>
     </div>

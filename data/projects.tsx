@@ -3,28 +3,26 @@ const projects = [
     id: "avon-tennis",
     name: "Avon Tennis",
     description: [
-      "WordPress website with custom theme and plugins.",
-      "I started working with Avon Tennis in 2017. The website continues to evolve and now has integrations with payment and mapping services.",
-      "I'm working on a separate native mobile app to integrate with WordPress as a headless CMS.",
+      "Custom website built with Nuxt.js and Forestry.io and hosted on Netlify.",
     ],
     url: "https://avontennis.org.uk",
     figma:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FY7979L9P92OPodIjtExVDTIV%2FWireframes-v2%3Fnode-id%3D1%253A2",
-    tags: ["PHP", "WordPress", "CSS Grid"],
+    tags: ["Nuxt"],
   },
   {
     id: "teamsheet",
     name: "Teamsheet",
     description: [
-      "Mobile app for scheduling five-a-side football matches.",
-      "I'm using React Native to build an app that can hopefully end those long and difficult to follow WhatsApp Groups.",
-      "Users create leagues and teams, then invite others to opt in or out of matches. The players on each team can be assigned automatically.",
-      "Push notifications will be sent if someone drops out so that others players can take their space.",
+      "Cross platform app for organising five-a-side football matches.",
+      // "I'm using Quasar and Firebase to build something I hope can improve on those long and difficult to follow WhatsApp Groups.",
+      // "Users create groups and matches, then invite others. Players on each team can be assigned automatically.",
+      // "Push notifications will be sent if someone drops out so that others players can take their space.",
     ],
     url: "https://teamsheet.app",
     figma:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMA1TdS8Y35dANDNG4pPa1S%2FTeamsheet",
-    tags: ["React Native", "Firebase"],
+    tags: ["Firebase"],
   },
   {
     id: "10x10",
@@ -49,7 +47,7 @@ const projects = [
       "Users can add and remove items, as well as marking them as complete.",
       "Completed items are automatically pushed down the list.",
     ],
-    url: "https://todo-vue-ten.vercel.app/",
+    // url: "https://todo-vue-ten.vercel.app/",
     figma:
       "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMGb3dEs0MFsHwV6bkvU0f9%2FTo-do-list%3Fnode-id%3D0%253A1",
     github: "https://github.com/tarpey/todo-vue",
@@ -169,7 +167,7 @@ const projects = [
       "South Gloucestershire Partnership website.",
       "The Partnership is a non-statutory body made up of public, private, community and voluntary organisations which aims to work together to promote the economic, social and environmental well-being of the people in South Gloucestershire.",
     ],
-    url: "https://sites.southglos.gov.uk/oaof",
+    // url: "https://sites.southglos.gov.uk/oaof",
     tags: ["PHP", "WordPress", "Bootstrap"],
   },
 ];

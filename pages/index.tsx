@@ -13,7 +13,7 @@ export default function Home() {
       <p className="description">
         I’m a full stack developer in Bristol, England. I design and code
         beautifully simple things. I’m currently a Frontend Developer at{" "}
-        <a href="https://data-cubed.co.uk">Data Cubed</a>.
+        <a href="https://boomboard.io">BoomBoard</a>.
       </p>
       <div className="buttons">
         <Button
@@ -33,11 +33,11 @@ export default function Home() {
           text="Email"
           url="mailto:hello@jamestarpey.com"
         />
-        <Button icon="mdiFileDocument" text="Resume" url="/resume" />
+        {/* <Button icon="mdiFileDocument" text="Resume" url="/resume" /> */}
       </div>
-      <h2>Projects</h2>
+      {/* <h2>Projects</h2>
       <div className="grid">
-        {projects.slice(0, 4).map((project, index) => {
+        {projects.slice(0, 2).map((project, index) => {
           return (
             <Project
               key={index}
@@ -47,8 +47,8 @@ export default function Home() {
             />
           );
         })}
-      </div>
-      <Button icon="mdiPlus" text="More Projects" url="/resume" />
+      </div> */}
+      {/* <Button icon="mdiPlus" text="More Projects" url="/resume" />
       <h2>Contact</h2>
       <p>Looking to build something?</p>
       <div className="buttons">
@@ -70,7 +70,7 @@ export default function Home() {
           url="mailto:hello@jamestarpey.com"
         />
         <Button icon="mdiFileDocument" text="Resume" url="/resume" />
-      </div>
+      </div> */}
     </main>
   );
 }

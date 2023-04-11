@@ -12,9 +12,10 @@ export default function Project(props) {
     <main>
       <Button icon="mdiArrowLeft" text="Back" url="/" />
       <h1 className="title">{project.name ? project.name : ""}</h1>
-      {project.description.map((paragraph, i) => {
-        return <p key={i}>{paragraph}</p>;
-      })}
+      {project.description &&
+        project.description.map((paragraph, i) => {
+          return <p key={i}>{paragraph}</p>;
+        })}
       <div className={project.url && project.github ? "buttons" : ""}>
         {project.url && (
           <Button
