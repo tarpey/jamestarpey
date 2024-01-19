@@ -11,7 +11,7 @@ export default function Home() {
         <h1>James Tarpey</h1>
       </header>
       <p className="description">
-        I'm a full stack developer in Bristol, England. I design and code
+        I&apos;m a full stack developer in Bristol, England. I design and code
         beautifully simple things, usually with JavaScript. I’m currently a
         Frontend Developer at <a href="https://boomboard.io">BoomBoard</a>.
       </p>
@@ -33,7 +33,7 @@ export default function Home() {
           text="Email"
           url="mailto:hello@jamestarpey.com"
         />
-        {/* <Button icon="mdiFileDocument" text="Resume" url="/resume" /> */}
+        <Button icon="mdiFileDocument" text="Resume" url="/resume" />
         <Button icon="mdiTools" text="Services" url="/services" />
       </div>
       {/* <h2>Projects</h2>

@@ -12,9 +12,9 @@ export default function Home() {
         <h1>James Tarpey</h1>
       </header>
       <p className="description">
-        I’m a full stack developer in Bristol, England. I design and code
-        beautifully simple things. I’m currently a Frontend Developer at{" "}
-        <a href="https://data-cubed.co.uk">Data Cubed</a>.
+        I&apos;m a full stack developer in Bristol, England. I design and code
+        beautifully simple things, usually with JavaScript. I’m currently a
+        Frontend Developer at <a href="https://boomboard.io">BoomBoard</a>.
       </p>
       <Button icon="mdiFileDownload" text="Download Resume" url="/resume.pdf" />
       <div className="skills">
@@ -38,7 +38,7 @@ export default function Home() {
           <Skill text="Agile" icon="mdiSync" />
         </div>
       </div>
-      <div className="projects">
+      {/* <div className="projects">
         <h2>Projects</h2>
         <div className="grid">
           {projects.map((project, index) => {
@@ -52,7 +52,7 @@ export default function Home() {
             );
           })}
         </div>
-      </div>
+      </div> */}
       <div className="employment">
         <h2>Employment</h2>
         <Employer

@@ -9,7 +9,7 @@ export default function Home() {
       <Button icon="mdiArrowLeft" text="Back" url="/" />
       <h1>Services</h1>
       <p className="description">
-        I'm available for design and development work{" "}
+        I&apos;m available for design and development work{" "}
         <strong style={{ textDecoration: "underline" }}>
           outside my full-time job
         </strong>
