@@ -6,5 +6,6 @@ import { Icon } from "./Icon";
 import { Project } from "./Project";
 import { Skill } from "./Skill";
 import { Tag } from "./Tag";
+import { Service } from "./Service";
 
-export { Button, Employer, Footer, Header, Icon, Project, Skill, Tag };
+export { Button, Employer, Footer, Header, Icon, Project, Skill, Tag, Service };

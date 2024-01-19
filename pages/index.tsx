@@ -11,9 +11,9 @@ export default function Home() {
         <h1>James Tarpey</h1>
       </header>
       <p className="description">
-        I’m a full stack developer in Bristol, England. I design and code
-        beautifully simple things. I’m currently a Frontend Developer at{" "}
-        <a href="https://boomboard.io">BoomBoard</a>.
+        I'm a full stack developer in Bristol, England. I design and code
+        beautifully simple things, usually with JavaScript. I’m currently a
+        Frontend Developer at <a href="https://boomboard.io">BoomBoard</a>.
       </p>
       <div className="buttons">
         <Button
@@ -34,6 +34,7 @@ export default function Home() {
           url="mailto:hello@jamestarpey.com"
         />
         {/* <Button icon="mdiFileDocument" text="Resume" url="/resume" /> */}
+        <Button icon="mdiTools" text="Services" url="/services" />
       </div>
       {/* <h2>Projects</h2>
       <div className="grid">

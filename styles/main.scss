@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300;500;700&display=swap");
 
 $accent: #48bb78;
 $focus: #48bb78;
@@ -8,7 +9,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "Anek Latin", sans-serif;
 }
 
 * {
@@ -21,7 +22,6 @@ body {
   color: #ffffff;
   padding: 200px 0;
   font-size: 22px;
-  font-weight: 300;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,6 +36,7 @@ header {
   grid-gap: 20px;
   h1 {
     line-height: 80px;
+    letter-spacing: -2px;
   }
 }
 
@@ -283,6 +284,11 @@ p.description {
 .muted {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.excluded {
+  color: rgba(187, 72, 72, 0.75);
+  text-decoration: line-through;
 }
 
 .screenshot {
