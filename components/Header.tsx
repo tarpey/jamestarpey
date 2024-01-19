@@ -11,7 +11,7 @@ export const Header: React.FunctionComponent<Props> = (props) => {
         name="description"
         content="Full stack developer in Bristol, England"
       />
-      <link rel="icon" href="/favicon.ico?v=3" />
+      <link rel="icon" href="/photo.png?v=3" />
     </Head>
   );
 };
