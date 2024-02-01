@@ -8,7 +8,7 @@ interface Props {
   name: string;
   icon: any;
   description: string;
-  terms: string;
+  terms?: string;
   cost?: string;
   tiers?: {
     title: string;
