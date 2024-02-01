@@ -12,8 +12,8 @@ export default function Home() {
       </header>
       <p className="description">
         I&apos;m a full stack developer in Bristol, England. I design and code
-        beautifully simple things, usually with JavaScript. I’m currently a
-        Frontend Developer at <a href="https://boomboard.io">BoomBoard</a>.
+        beautifully simple and user-friendly things. I&apos;m currently a Senior
+        Web Developer at <a href="https://uk.adp.com">ADP</a>.
       </p>
       <div className="buttons">
         <Button
@@ -33,8 +33,8 @@ export default function Home() {
           text="Email"
           url="mailto:hello@jamestarpey.com"
         />
-        <Button icon="mdiFileDocument" text="Resume" url="/resume" />
-        <Button icon="mdiTools" text="Services" url="/services" />
+        {/* <Button icon="mdiFileDocument" text="Resume" url="/resume" />
+        <Button icon="mdiTools" text="Services" url="/services" /> */}
       </div>
       {/* <h2>Projects</h2>
       <div className="grid">
