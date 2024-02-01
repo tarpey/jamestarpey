@@ -2,11 +2,13 @@ import * as React from "react";
 import Image from "next/image";
 import { Tier } from "./Tier";
 import { Icon } from "./Icon";
+import Link from "next/link";
 
 interface Props {
   name: string;
   icon: any;
   description: string;
+  terms: string;
   cost?: string;
   tiers?: {
     title: string;
@@ -21,6 +23,7 @@ export const Service: React.FunctionComponent<Props> = ({
   name,
   icon,
   description,
+  terms,
   cost,
   tiers,
 }) => {
@@ -33,7 +36,11 @@ export const Service: React.FunctionComponent<Props> = ({
         <div className="title">
           <h3>{name}</h3>
           <p>{cost}</p>
-          <p className="muted">{`${description}`}</p>
+          <p className="muted">
+            {`${description}`}
+            {terms && ` - `}
+            {terms && <Link href={terms}>Terms</Link>}
+          </p>
         </div>
       </div>
       {tiers &&

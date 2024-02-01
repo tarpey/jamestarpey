@@ -40,6 +40,7 @@ export default function Home() {
           name="WordPress"
           icon="mdiWordpress"
           description="Keep your WordPress websites running smoothly"
+          terms="/wp-maintenance-terms"
           tiers={[
             {
               title: "Monthly Maintenance",
