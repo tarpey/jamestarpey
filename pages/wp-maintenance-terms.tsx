@@ -65,7 +65,8 @@ export default function Home() {
               Search Engine Optimisation plugin
             </a>
           </li>
-          <li>Monthly call for around 15 minutes - completely optional</li>
+          <li>Monthly call for around 15 minutes - optional</li>
+          <li>Monthly client report to summarise completed work</li>
         </ul>
         <h3>What&apos;s NOT included</h3>
         <ul>
@@ -83,6 +84,13 @@ export default function Home() {
             problems
           </li>
         </ul>
+      </div>
+
+      <div>
+        <h3>Access</h3>
+        <p>
+          I&apos;ll need an account in order to access your WordPress websites.
+        </p>
       </div>
 
       <div>
