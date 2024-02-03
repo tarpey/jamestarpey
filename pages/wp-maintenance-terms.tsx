@@ -66,7 +66,7 @@ export default function Home() {
             </a>
           </li>
           <li>Monthly call for around 15 minutes - optional</li>
-          <li>Monthly client report to summarise completed work</li>
+          <li>Monthly report to summarise completed work</li>
         </ul>
         <h3>What&apos;s NOT included</h3>
         <ul>

@@ -52,6 +52,7 @@ export default function Home() {
                 "Availability monitoring",
                 "Broken link checker",
                 "Search Engine Optimisation",
+                "Monthly report",
               ],
               excluded: [
                 "Development",
