@@ -27,6 +27,14 @@ function App({ Component, pageProps }: AppProps) {
       <div className="container">
         <Component {...pageProps} />
       </div>
+
+      <Script
+        id="umami"
+        defer
+        src="https://analytics.jamestarpey.com/script.js"
+        data-website-id="c14e0804-4bb4-474a-9038-6785bc01d929"
+      ></Script>
+
       <Footer />
     </>
   );
